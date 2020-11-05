@@ -1,0 +1,5 @@
+Para ejecutar el programa, solo cargue en el interprete el archivo app.py
+no se necesitan librerias adicionales, ademas de pickle
+
+Observacion
+la base de datos tiene algunos archivos precargados
