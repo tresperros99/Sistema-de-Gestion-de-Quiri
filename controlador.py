@@ -16,7 +16,7 @@ class Quiri (Empresa):
 	def __init__(self):
 		#Instanciamos la clase padre
 		Empresa.__init__(self,'Quiri')
-		self.vista=view()
+		self.vista=View()
 		self.modelo=Model()
 		try:
 			self.productos = self.modelo.obtener_datos('productos')

@@ -7,7 +7,7 @@ class App:
     '''Con esta clase inicializamos el sistema'''
     @staticmethod
     def main():
-        vista=view()
+        vista=View()
         try:
             control= Quiri()
         except Exception as e:

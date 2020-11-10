@@ -4,6 +4,9 @@ ARCHIVO_INSUMOS='Persistencia/insumos.pickle'
 ARCHIVO_MOVIMIENTOS='Persistencia/movimientos.pickle'
 diccionario={'productos' : ARCHIVO_PRODUCTOS ,'insumos': ARCHIVO_INSUMOS,'movimientos':ARCHIVO_MOVIMIENTOS }
 class Model:
+	'''Clase encargarda de realizar la persistencia de objeto usando pickle
+	para su posterior uso en el programa
+	'''
     def cargar_datos(self, lista,directorio):
         file = open(diccionario[directorio], "wb")
         pickle.dump(lista, file)
