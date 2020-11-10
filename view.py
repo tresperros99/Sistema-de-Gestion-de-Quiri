@@ -1,6 +1,6 @@
 import os
 
-class view:
+class View:
     '''Clase encargada de mostrar los menus al usuario, tambien
     de mandar mensajes  y de recibir los datos necesarios para 
     el funcionamiento del sistema'''
@@ -9,7 +9,7 @@ class view:
         al usuario'''
         opcion=-1
         while opcion<1 or opcion>4:
-            view.clean_screen(self)
+            View.clean_screen(self)
             print('-------------------------------------------')
             print('Bienvenido al sistema de Gestion de Quiri')
             print('-------------------------------------------')
@@ -18,31 +18,31 @@ class view:
             print('2- Realizar Movimientos')
             print('3- Consultar')
             print('4- Salir')
-            opcion=view.leer_numero(self)
+            opcion=View.leer_numero(self)
         return opcion
     
     def sub_menu_movimientos(self):
         opcion=-1
         while opcion<1 or opcion>3:
-            view.clean_screen(self)
+            View.clean_screen(self)
             print('-------------------------------------------')
             print('\t\tMovimientos')
             print('1- Movimientos de Compra')
             print('2- Movimientos de Venta')
             print('3- Salir')
-            opcion=view.leer_numero(self)
+            opcion=View.leer_numero(self)
         return opcion
     def sub_menu_consultar(self):
         opcion=-1
         while opcion<1 or opcion>4:
-            view.clean_screen(self)
+            View.clean_screen(self)
             print('-------------------------------------------')
             print('\t\t Consultar')
             print('1- Movimientos de Compra')
             print('2- Movimientos de Venta')
             print('3- Todos los Movimientos')
             print('4- Salir')
-            opcion=view.leer_numero(self)
+            opcion=View.leer_numero(self)
         return opcion
 
     def clean_screen(self):
