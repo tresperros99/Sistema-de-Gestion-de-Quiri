@@ -1,4 +1,4 @@
-from  view import *
+from view import *
 from datetime import *
 from model import *
 from Modulos.clases import *
